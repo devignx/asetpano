@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en_US" />
+    <meta name="google-site-verification" content="aQEVRMEq9xD0HpM08qISm_GX13_hc4md32mKfxMZKXQ" />
+    <meta name=description content="View ASET from the comfort of your phone or PC">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ASET Street View 360" />
+    <meta property="og:description" content="View ASET from the comfort of your phone or PC" />
+    <meta property="og:url" content="https://asetpano.herokuapp.com/" />
+    <meta property="og:site_name" content="ASET" />
+	<meta property="og:image" content="https://ahalia.ac.in/wp-content/uploads/2021/04/iedc-400-X-300-Px.jpg" />
+    <meta property="og:image:type" content="image/png" />
+    <title>ASET Street View</title>
+    <link rel="stylesheet" href="pannellum.css"/>
+    <script type="text/javascript" src="pannellum.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+    #panorama {
+        width: 100vw;
+        height: 70vh;
+        transform: translate(-50%,0%);
+        left: 50%;
+    }
+    cred{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position:absolute; 
+        text-align: center;
+        transform: translate(-50%,0%);
+        left: 50%;
+        bottom:3%;
+        font-size: 2vh;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+    }
+    body{
+        background-color: rgb(220, 238, 245);
+    }
+
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<cred>Designed by <a href="https://devignx.herokuapp.com/"><span1>@DevignX</span1></a> & Developed by <a href="https://github.com/teamyash1923/"><span2>@TeamYASH </span2></a></cred>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://i.imgur.com/k9EXJph.jpeg"
+});
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } } ; externalLinks();
+</script>
+
+</body>
+</html>
